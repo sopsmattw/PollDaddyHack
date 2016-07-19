@@ -29,7 +29,7 @@ def vote(form, value, times):
 		# If successful, print that out, else try waiting for 60 seconds (rate limiting)
 		if not b:
 			print "Voted (time number " + str(i) + ")!"
-			time.sleep(3)
+			time.sleep(2)
 		else:
 			print "Locked.  Sleeping for 60 seconds."
 			i-=1
